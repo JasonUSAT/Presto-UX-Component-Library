@@ -1,0 +1,29 @@
+<section id="stausdata" class="muted text-small">
+	<div id="lastaction"><strong>Last action:</strong> <span class="capitalize ng-binding">draft</span> - 8/28/13 9:41 AM</div>
+	<div id="createddby"><strong>Created by:</strong> jsmith</div>
+	<div id="modifiedby"><strong>Modified by:</strong> jsmith</div>
+	<div id="assetorigin" class="">
+	
+	<strong>Origin:</strong> <a href="http://www.app.com/" target="external">Asbury Park Press</a> —
+	
+	<span class="btn-group">
+
+	<button class="btn btn-micro dropdown-toggle text-xsmall" data-toggle="dropdown" ng-hide="isPublished"><span ng-bind="subsitename">Main</span> <span class="caret"></span></button>
+
+	<ul class="dropdown-menu additem" ng-hide="isPublished">
+				<li><span ng-click="togglesubsite('Learning')"> Learning</span> </li>
+				<li><span ng-click="togglesubsite('On Your Side')"> On Your Side</span></li>
+				<li><span ng-click="togglesubsite('Health')"> Health</span></li>
+				<li><span ng-click="togglesubsite('Watchdog')"> Watchdog</span></li>
+				<li><span ng-click="togglesubsite('Politics')"> Politics</span></li>
+	</ul>
+	
+	</span>
+	
+	<span ng-show="isPublished"><a href="http://www.app.com/"  ng-bind="subsitename"target="external">Main</a></span>
+
+	</div>
+	
+</section>
+
+<hr>

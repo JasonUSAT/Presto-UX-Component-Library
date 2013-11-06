@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" ng-app>
+
+  <head>
+	<meta charset="utf-8">
+    <title>Presto | Multi-user | Option 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+    <link href="css/module.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/presto-ui.css" rel="stylesheet" media="screen">
+    <link href="css/pstrap.css" rel="stylesheet" media="screen">
+    <link href="css/select2.css" rel="stylesheet" media="screen">
+    <link href="css/presto-ux.css" rel="stylesheet" media="screen">
+    
+  </head>
+  
+<body id="Body">    
+    <form  id="Form" enctype="multipart/form-data" name="storyform">
+
+<!-- Content -->
+<header class="navbar">
+   	
+   	 <div class="navbar-inner">
+
+        <div class="row-fluid">
+        
+				<!--#include virtual="presto-global-logo.html" -->
+            
+            <div class="nav-collapse collapse">
+              
+				<!--#include virtual="presto-global-menu.html" -->
+				
+                <!--#include virtual="presto-global-user.html" -->
+                
+                <!--#include virtual="presto-global-siteselect-2.html" -->
+                
+            </div>
+
+        </div>
+        
+    </div>
+	
+	<!--#include virtual="presto-breadcrumbs.html" -->
+    
+</header>
+
+<section id="Content" class="row-fluid" ng-controller="Controller">
+
+	<!--#include virtual="presto-assettabs.html" -->
+    
+	<div class="tab-content" id="Panes" style="margin: 0 20px;">
+		
+		<article id="story" class="tab-pane active">
+
+			<div class="clearfix">
+			
+				<div class="ContainerWrapper"></div>
+				
+					<div class="row-fluid">
+	    			
+	    				<div id="story" class="span8" style="width: 70%">
+	    				
+							<!--#include virtual="presto-title.html" -->
+	    				
+		    				<div id="storydata" class="row-fluid">
+			    				
+			    				<div id="metadata" class="span5" style="height:800px;width: 304px; overflow: auto;">
+			    							    					
+									<div class="content">
+											
+											<!--#include virtual="presto-meta-origin-2.html" -->
+											
+											<!--#include virtual="presto-meta-share.html" -->
+											
+											<!--#include virtual="presto-meta-frontassignment-1.html" -->
+											
+									</div>
+								
+								</div>
+			    				
+			    				<div id="bodydata" class="span8" style="width: 65%">
+			    				
+				    				<!--#include virtual="presto-body.html" -->
+				    				
+			    				</div>
+			    				
+		    				</div>
+		    				
+	    				</div>
+	    		
+						<div id="storycontrols" class="span4 pull-right" style="width: 305px">
+	    				
+							<div id="assetBar">
+								
+									<!--#include virtual="presto-save.html" -->
+			    				
+									<!--#include virtual="presto-publish.html" -->
+			    					
+			    				<!--#include virtual="presto-assetspanel.html" -->
+			    				
+			    			</div>
+	    			
+						</div>
+	    			
+	    			</div>
+				
+				</div>
+		
+			</article>
+		
+		<article id="versions" class="tab-pane">Versions</article>
+	
+	</div>
+		
+</section>
+
+	
+
+
+<!-- Modal -->
+	<div id="preview1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="preview1" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove-sign"></i></button>
+	    <h3 id="myModalLabel3">USAT»Preview»Boston City Flow</h3>
+	  </div>
+	  <div class="modal-body">
+	    <p><img src="img/Photos/Boston%20City%20Flow.jpg" alt="Boston%20City%20Flow" width="1024" height="683"></p>
+	    <p>In another moment down went Alice after it, never once considering how in the world she was to get out again. <cite>(Photo: Louis Lopez, AP)</cite> </p>
+	  </div>
+	</div>
+	
+<!-- JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/components.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/presto.js"></script>
+
+    
+  </form>
+  </body>
+</html>

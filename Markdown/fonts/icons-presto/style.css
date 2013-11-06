@@ -1,0 +1,235 @@
+@font-face {
+	font-family: 'icons-presto';
+	src:url('fonts/icons-presto.eot');
+	src:url('fonts/icons-presto.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icons-presto.woff') format('woff'),
+		url('fonts/icons-presto.ttf') format('truetype'),
+		url('fonts/icons-presto.svg#icons-presto') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icons-presto';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="p-icon-"] {
+*/
+.p-icon-quote-left, .p-icon-quote, .p-icon-rss, .p-icon-eraser, .p-icon-pagebreak, .p-icon-underline, .p-icon-numbered-list, .p-icon-blog, .p-icon-binoculars, .p-icon-redo, .p-icon-undo, .p-icon-omega, .p-icon-notes, .p-icon-selectionadd, .p-icon-file-xml, .p-icon-images, .p-icon-map, .p-icon-video2, .p-icon-link, .p-icon-nail, .p-icon-pen, .p-icon-movie5, .p-icon-newspaper, .p-icon-keyboard, .p-icon-list, .p-icon-crop, .p-icon-CQ, .p-icon-spinner, .p-icon-aspect-16-9, .p-icon-aspect-9-16, .p-icon-aspect-4-3, .p-icon-aspect-3-4, .p-icon-aspect-1-1, .p-icon-notes-not-published, .p-icon-no-syndication, .p-icon-link-break, .p-icon-html, .p-icon-text, .p-icon-popup, .p-icon-export, .p-icon-export-2, .p-icon-opennewwindow, .p-icon-tablet, .p-icon-mobile, .p-icon-google-plus, .p-icon-twitter, .p-icon-facebook, .p-icon-radio-unchecked, .p-icon-dot, .p-icon-check-empty, .p-icon-checkmark, .p-icon-mark-presto, .p-icon-video-playlist, .p-icon-link-related, .p-icon-fastforward, .p-icon-rewind, .p-icon-play, .p-icon-stop, .p-icon-pause, .p-icon-repeat, .p-icon-shuffle, .p-icon-record, .p-icon-next, .p-icon-previous, .p-icon-sharethree {
+	font-family: 'icons-presto';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.p-icon-quote-left:before {
+	content: "\25";
+}
+.p-icon-quote:before {
+	content: "\26";
+}
+.p-icon-rss:before {
+	content: "\27";
+}
+.p-icon-eraser:before {
+	content: "\28";
+}
+.p-icon-pagebreak:before {
+	content: "\29";
+}
+.p-icon-underline:before {
+	content: "\2a";
+}
+.p-icon-numbered-list:before {
+	content: "\2b";
+}
+.p-icon-blog:before {
+	content: "\2c";
+}
+.p-icon-binoculars:before {
+	content: "\2d";
+}
+.p-icon-redo:before {
+	content: "\2e";
+}
+.p-icon-undo:before {
+	content: "\2f";
+}
+.p-icon-omega:before {
+	content: "\30";
+}
+.p-icon-notes:before {
+	content: "\31";
+}
+.p-icon-selectionadd:before {
+	content: "\32";
+}
+.p-icon-file-xml:before {
+	content: "\33";
+}
+.p-icon-images:before {
+	content: "\34";
+}
+.p-icon-map:before {
+	content: "\35";
+}
+.p-icon-video2:before {
+	content: "\36";
+}
+.p-icon-link:before {
+	content: "\37";
+}
+.p-icon-nail:before {
+	content: "\f428";
+}
+.p-icon-pen:before {
+	content: "\e000";
+}
+.p-icon-movie5:before {
+	content: "\f193";
+}
+.p-icon-newspaper:before {
+	content: "\e001";
+}
+.p-icon-keyboard:before {
+	content: "\e002";
+}
+.p-icon-list:before {
+	content: "\e003";
+}
+.p-icon-crop:before {
+	content: "\e004";
+}
+.p-icon-CQ:before {
+	content: "\e006";
+}
+.p-icon-spinner:before {
+	content: "\e005";
+}
+.p-icon-aspect-16-9:before {
+	content: "\e007";
+}
+.p-icon-aspect-9-16:before {
+	content: "\e008";
+}
+.p-icon-aspect-4-3:before {
+	content: "\e009";
+}
+.p-icon-aspect-3-4:before {
+	content: "\e00a";
+}
+.p-icon-aspect-1-1:before {
+	content: "\e00b";
+}
+.p-icon-notes-not-published:before {
+	content: "\e00c";
+}
+.p-icon-no-syndication:before {
+	content: "\e00d";
+}
+.p-icon-link-break:before {
+	content: "\e00e";
+}
+.p-icon-html:before {
+	content: "\f068";
+}
+.p-icon-text:before {
+	content: "\e00f";
+}
+.p-icon-popup:before {
+	content: "\e010";
+}
+.p-icon-export:before {
+	content: "\e011";
+}
+.p-icon-export-2:before {
+	content: "\e012";
+}
+.p-icon-opennewwindow:before {
+	content: "\f332";
+}
+.p-icon-tablet:before {
+	content: "\e013";
+}
+.p-icon-mobile:before {
+	content: "\e014";
+}
+.p-icon-google-plus:before {
+	content: "\e015";
+}
+.p-icon-twitter:before {
+	content: "\e016";
+}
+.p-icon-facebook:before {
+	content: "\e017";
+}
+.p-icon-radio-unchecked:before {
+	content: "\e018";
+}
+.p-icon-dot:before {
+	content: "\f096";
+}
+.p-icon-check-empty:before {
+	content: "\2713";
+}
+.p-icon-checkmark:before {
+	content: "\e019";
+}
+.p-icon-mark-presto:before {
+	content: "\e01a";
+}
+.p-icon-video-playlist:before {
+	content: "\e01b";
+}
+.p-icon-link-related:before {
+	content: "\e01c";
+}
+.p-icon-fastforward:before {
+	content: "\f182";
+}
+.p-icon-rewind:before {
+	content: "\f183";
+}
+.p-icon-play:before {
+	content: "\f184";
+}
+.p-icon-stop:before {
+	content: "\f185";
+}
+.p-icon-pause:before {
+	content: "\f186";
+}
+.p-icon-repeat:before {
+	content: "\f187";
+}
+.p-icon-shuffle:before {
+	content: "\f188";
+}
+.p-icon-record:before {
+	content: "\f189";
+}
+.p-icon-next:before {
+	content: "\f18a";
+}
+.p-icon-previous:before {
+	content: "\f18b";
+}
+.p-icon-sharethree:before {
+	content: "\f414";
+}

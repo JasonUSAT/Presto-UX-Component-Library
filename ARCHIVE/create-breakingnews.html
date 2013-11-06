@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" ng-app="components">
+  <head>
+	<meta charset="utf-8">
+    <title>Presto | Create | Breaking News v3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/presto-ui.css" rel="stylesheet" media="screen">
+    <link href="css/pstrap.css" rel="stylesheet" media="screen">
+    <link href="css/select2.css" rel="stylesheet" media="screen">
+    
+    <style type="text/css">    
+	    .overrideheadline {
+	    }
+	    
+	    #storycopy, #articlecontent {
+		    min-height: 275px;
+	    }
+	    
+	   #headlinoverrides h3, #headlinoverrides h4 {
+		    display: inline;
+	    }
+	    
+	    
+	    #headlinoverrides h3 {
+	    	font-size: 18px;
+	    	position: relative;
+	    	left: -30px;
+	    }
+	    
+	    #headlinoverrides h4 {
+		    font-size: 14px;
+		    padding: 0;
+		    margin: -25px;
+	    }
+		
+		#headlinoverrides .charcount strong {
+		    font-size: 1em;
+	    }
+	    
+	    #headlinoverrides .headlineoverride {
+		     position: relative;
+	     }
+	     
+	    #headlinoverrides .headlineoverride .charcount {
+	    	width: 40px;
+	    }
+	    
+	    #headlinoverrides .expires {
+		    padding-top: 0;
+	    }
+	    
+	    #headlinoverrides .status { position: absolute; bottom: 14px; left: 5px}
+	    
+		input[type="number"].expirevalue {
+			font-size: 12px
+		}
+		
+		#headlinoverrides .headlineoverride input[type="text"] {
+		    width: 113%;
+		}
+		
+		#headlinoverrides .headlineoverride .overrideheadline {
+		}
+		
+		#headlinoverrides .bordertop {
+			margin: 0;
+			padding: 0;
+		}
+		
+		#headlinoverrides .row-fluid {
+			position: relative;
+		}
+		
+		.publishdate { position: absolute; top: 15px; left: -4px; }
+	    
+    </style>
+    
+  </head>
+  <body>
+<form id="storyform" name="storyform" novalidate>
+
+<!-- Content -->
+
+<header id="prestoheader" class="">
+	  <nav class="row-fluid navbar">
+      	<div class="navbar-inner">
+                <div class="container">
+                  <a class="brand" href="#">
+<hgroup class="presto-logo light text-xsmall" style="font-size: 36px; border-right: 1px solid rgba(0,0,0,.2);">
+  <icon class="p-icon-mark-presto design"></icon>
+  <h1>PRESTO</h1>
+  <h2>Design</h2>
+  <br style="clear:both;">
+</hgroup>
+                  </a>
+                  <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav">
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">View <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Content Dashboard</a></li>
+                          <li><a href="#">Asset Gallery</a></li>
+                          <li><a href="#">Wires</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#"><strong>More…</strong></a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Create <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li class="nav-header">Articles</li>
+                          <li class="dropdown-submenu">
+                          	<a tabindex="-1" href="#">Blog Post</a>
+						  	<ul class="dropdown-menu">
+								<li><a href="#">App Insider		  </a></li>	
+								<li><a href="#">Book Buzz		  </a></li>	
+								<li><a href="#">Book Review		  </a></li>	
+								<li><a href="#">Breaking News	  </a></li>	
+								<li><a href="#">Campus Rivalry	  </a></li>	
+								<li><a href="#">Corrections		  </a></li>	
+								<li><a href="#">Cruise Log		  </a></li>	
+								<li><a href="#">CyberTruth		  </a></li>	
+								<li><a href="#">Daily Pitch		  </a></li>	
+								<li><a href="#">Dispatches		  </a></li>	
+								<li><a href="#">Drive On		  </a></li>	
+								<li><a href="#">Event			  </a></li>	
+								<li><a href="#">Faith & Reason	  </a></li>	
+								<li><a href="#">Fantasy Joe		  </a></li>	
+								<li><a href="#">Fantasy Windup	  </a></li>	
+								<li><a href="#">Fighting Stances  </a></li>	
+								<li><a href="#">Game Hunters	  </a></li>	
+								<li><a href="#">Game On!		  </a></li>	
+								<li><a href="#">Green House		  </a></li>	
+								<li><a href="#">Happy Ever After  </a></li>	
+								<li><a href="#">Hotel Check-In	  </a></li>	
+								<li><a href="#">Idol Chatter	  </a></li>	
+								<li><a href="#">Idol Meter		  </a></li>	
+								<li><a href="#">Kindness		  </a></li>	
+								<li><a href="#">Lifeline Live	  </a></li>	
+								<li><a href="#">Live From		  </a></li>	
+								<li><a href="#">On Deadline		  </a></li>	
+								<li><a href="#">On Politics		  </a></li>	
+								<li><a href="#">Paw Print Post	  </a></li>	
+								<li><a href="#">Points of Interest</a></li>	
+								<li><a href="#">Pop Candy		  </a></li>	
+								<li><a href="#">Pressreleases	  </a></li>	
+								<li><a href="#">Promo			  </a></li>	
+								<li><a href="#">Science Fair	  </a></li>	
+								<li><a href="#">Short Takes		  </a></li>	
+								<li><a href="#">Technology Live	  </a></li>	
+								<li><a href="#">Test			  </a></li>	
+								<li><a href="#">The Huddle		  </a></li>	
+								<li><a href="#">The Oval		  </a></li>	
+								<li><a href="#">Today in the Sky  </a></li>	
+								<li><a href="#">View from China	  </a></li>	
+	                        </ul>
+                          </li>
+                          <li><a href="#">Story</a></li>
+                          <li><a href="#">Breaking News</a></li>
+                          <li><a href="#">Book Review</a></li>
+                          <li class="divider"></li>
+                          <li class="nav-header">Assets</li>
+                          <li><a href="#">Gallery</a></li>
+                          <li><a href="#">Video</a></li>
+                          <li><a href="#">Multi-Image Upload</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#"><strong>More…</strong></a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          	<li class="nav-header">Sections</li>
+							<li><a href="#">Home				  </a></li>
+							<li><a href="#">News				  </a></li>
+							<li><a href="#">Sports				  </a></li>
+							<li><a href="#">Life				  </a></li>
+							<li><a href="#">Money				  </a></li>
+							<li><a href="#">Tech				  </a></li>
+							<li><a href="#">Travel				  </a></li>
+	                        <li class="divider"></li>
+							<li class="nav-header">Special</li>
+							<li><a href="#">Curated Topic		  </a></li>
+							<li><a href="#">Global Modules		  </a></li>
+							<li><a href="#">Html Edit Test		  </a></li>
+							<li><a href="#">Manage Fronts		  </a></li>
+							<li><a href="#">Mobile Config Tool	  </a></li>
+							<li><a href="#">Social Media		  </a></li>
+							<li><a href="#">Staff Edit			  </a></li>
+							<li><a href="#">Staff Maintenance	  </a></li>
+							<li><a href="#">User Generated Content</a></li>
+	                        <li class="divider"></li>
+	                        <li><a href="#"><strong>More…</strong></a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                   </div><!-- /.nav-collapse -->
+                </div>
+        </div><!-- /navbar-inner -->
+      </nav>
+      
+      <div id="breadcrumb" class="row-fluid">	
+			<ul class="breadcrumb">
+			  <li class="indexitem"><a href="#">Content Dashboard</a><span class="divider">/</span></li>
+			  <li><a href="#">Create</a><span class="divider">/</span></li>
+			  <li><strong>Breaking News</strong></li>
+			 </ul>
+		</div>
+      
+	</header>
+  
+<section id="page" ng-controller="Controller" class="container">
+		
+		<div id="breadcrumb" class="row-fluid">	
+			<ul class="breadcrumb">
+			  <li><a href="#">Content Dashboard</a><span class="divider">/</span></li>
+			  <li><a href="#">Create</a><span class="divider">/</span></li>
+			  <li><strong>Breaking News</strong></li>
+			 </ul>
+		</div>	
+	
+	<fieldset class="tabbable">
+
+		<div id="storyurl" class="pull-right" style="">
+		<div class=""> 
+				
+				<div class="btn-group dropup metalinks">
+				
+				<button  class="btn btn-mini" title="click to copy ID to clipboard"><strong>URL</strong> http://www.usatoday.com/story/weather/2012/12/05/arctic-report-card-noaa/1748861/</button>
+			  <button class="btn btn-mini" title="click to copy ID to clipboard"><strong>ID</strong> 838098</button>
+			  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			    <!-- dropdown menu links -->
+			    <li><a href="#">Edit Asset</a></li>
+			    <li><a href="#">View Asset</a></li>
+			    <li><a href="#">View XML</a></li>
+			    <li><a href="#">View JSON</a></li>
+			  </ul>
+			</div>
+		</div>
+	</div>
+
+		<ul class="nav nav-tabs">
+		<li class="active"><a href="#story" data-toggle="tab">Story</a></li>
+		<li><a href="#history" data-toggle="tab">history</a></li>
+	</ul>
+	
+		<div class="tab-content">
+			
+			<article id="story" class="tab-pane active">
+	 		
+	 			<div id="storycontrols" class="offset8 span4 affix">
+				
+					<div class="alert alert-warning text-small">
+						<strong>tjefferson</strong> and <strong>bfranklin</strong> are editing this story
+					</div>
+				
+					<div id="draftcontrols" class="draftcontrols content">
+
+<div class="draftstatus">
+
+	<div id="draftmessage" class="status draft pull-right">Draft</div> 
+
+	<div id="saving" class="label-text pull-left small" ng-show="isSaving"><i class="p-icon-spinner spinner"></i> Saving</div>
+
+	<div id="savemessage1" class="label-text text-small pull-left savemessage" ng-show="!isDraft">NOT SAVED</div>
+
+	<div id="savemessage2" class="label-text text-small pull-left"  ng-show="isDraft"><strong>Saved:</strong> 1 min ago (3/21/2013 4:48 pm)</div>
+
+</div>
+						<br><br>	
+	<div class="btn-group" class="draftbuttons pull-clear">
+		
+		<button id="fullscreen" title="Click for Full Screen View" ng-click="togglefullscreen()" class="btn"><i class="icon-fullscreen"></i> </button>
+		
+		<button  title="Click for Spell Check" class="btn" type="button" ng-click="spellcheck()"> <i class="icon-check"></i></button>
+		<a id="previewbtn" title="Click to Preview" class="btn" ng-disabled="storyform.$invalid" href="http://www.usatoday.com" target="preview"><i class="icon-eye-open"></i> Preview</a>
+		<button  title="Click to save Draft" id="savedraft" class="btn btn-primary" ng-disabled="storyform.$invalid" ng-click="savedraft()" tabindex="2">Save</button>
+	
+	</div>
+							
+</div>
+							
+					<fieldset id="publishcontrols" class="publishcontrols">	
+		
+					<div class="btn-group content pull-left">
+						<button class="btn btn-warning" ng-disabled="!isPublishedNow" ng-click="unpublish()"><i class="icon-ban-circle"></i> Expire All Now</button>
+						<button class="btn btn-success" ng-disabled="storyform.$invalid" ng-click="publish()">Send All <i class="icon-arrow-right"></i></button>
+					</div>
+											
+					
+					</fieldset>
+		
+					<div id="assetlibrary">
+							
+				<div class="tabbable">
+				
+				  <ul class="nav nav-tabs">
+				    <li class="active"><a href="#search" data-toggle="tab"><i class="icon-search"></i></a></li>
+				    <li><a href="#assets" data-toggle="tab">Assets</a></li>
+				  </ul>
+							
+				  <div class="tab-content asset-content">
+							
+					  <div class="tab-pane active form-search" id="search" title="search">
+									
+						<header>
+									
+							<div class="input-append">
+
+							 <input type="search" ng-model="storyform.keyword" placeholder="Keyword/Content ID">
+										    
+							    <div class="btn-group">
+									<button type="submit" class="btn"><i class="icon-search"></i></button>
+							    </div>
+							</div>
+									
+						</header>
+						
+						<div class="assetlist" style="">
+					
+							<table id="searchresults" ng-show="storyform.keyword" style="width: 100%">
+									
+																		
+	<tr draggable="true">
+		<td>
+			<i class="icon-camera" title="image"></i>
+			<a href="#"><i class="icon-plus-sign hide hover" title="Associate but do not Insert"><span class="label-icon">Associate</span></i></a>
+		</td>
+		<td style="width: 220px;">
+			<article>Pensive Parakeet</article>
+			<footer><div class="btn-group dropup metalinks">
+  <button class="btn btn-mini" title="click to copy ID to clipboard">ID 838098</button>
+  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+    <li><a href="#">Edit Asset</a></li>
+    <li><a href="#">View Asset</a></li>
+    <li><a href="#">View XML</a></li>
+    <li><a href="#">View JSON</a></li>
+  </ul>
+</div> | 12/25/2013 12:35:56 PM</footer>
+		</td>
+		<td><a  href="#preview2" data-toggle="modal"><i class="p-icon-opennewwindow control" title="Open Image"><span class="label-icon">Open Image</span></i>
+			<img src="img/Photos/Pensive%20Parakeet.jpg" alt="Pensive%20Parakeet" width="100"></a>
+		</td>
+	</tr>
+	
+	<tr draggable="true">
+		<td>
+			<i class="icon-camera" title="image"></i>
+			<a href="#"><i class="icon-plus-sign hide hover" title="Associate but do not Insert"><span class="label-icon">Associate</span></i></a>
+		</td>
+		<td>
+			<article><strong>External Video:</strong> Boston City Flow</article>
+			<footer><div class="btn-group dropup metalinks">
+  <button class="btn btn-mini" title="click to copy ID to clipboard">ID 838098</button>
+  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+    <li><a href="#">Edit Asset</a></li>
+    <li><a href="#">View Asset</a></li>
+    <li><a href="#">View XML</a></li>
+    <li><a href="#">View JSON</a></li>
+  </ul>
+</div> | 12/25/2013 12:35:56 PM</footer>
+		</td>
+		<td>
+		<a  href="#preview2" data-toggle="modal"><i class="p-icon-opennewwindow control" title="Open Image"><span class="label-icon">Open Image</span></i>
+					<img src="img/Photos/Boston%20City%20Flow.jpg" alt="Boston%20City%20Flow" width="100"></a>
+		</td>
+	</tr>
+	
+	<tr draggable="true">
+		<td>
+			<i class="icon-camera" title="image"></i>
+			
+			<a href="#"><i class="icon-plus-sign hide hover" title="Associate but do not Insert"><span class="label-icon">Associate</span></i></a>
+		</td>
+		<td>
+			<article><strong>Costa Rican Frog</strong> </article>
+			<footer><div class="btn-group dropup metalinks">
+  <button class="btn btn-mini" title="click to copy ID to clipboard">ID 838098</button>
+  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+    <li><a href="#">Edit Asset</a></li>
+    <li><a href="#">View Asset</a></li>
+    <li><a href="#">View XML</a></li>
+    <li><a href="#">View JSON</a></li>
+  </ul>
+</div> | 12/25/2013 12:35:56 PM</footer>
+		</td>
+		<td><a href="#preview2" data-toggle="modal"><i class="p-icon-opennewwindow control" title="Open Image"><span class="label-icon">Open Image</span></i>
+		<img src="img/Photos/Costa%20Rican%20Frog.jpg" alt="Costa%20Rican%20Frog" width="1024" height="768">
+		</td>
+	</tr>
+	
+		
+				
+	
+</table>
+						
+							<div id="searchmessage1" class="message" ng-hide="storyform.keyword">
+								Enter keyword or content ID above to begin search.
+							</div>
+							
+							<div id="searchmessage2"  class="message error" ng-show="">
+								Sorry, 0 results were found. Please try a different keyword or content ID.
+							</div>
+						
+						</div>
+
+									
+				</div>
+															
+		<div class="tab-pane" id="assets" title="A">
+		<header>
+			<span class="badge">0</span> Assets
+		</header>
+		
+		<div class="assetlist">
+
+		<table id="associated" ng-show="storyform.keyword" tyle="width: 100%">
+		<tr draggable="true" class="priority">
+		<td>
+					
+			<i class="icon-camera" title="Gallery"><span class="label-icon">Image</span></i>
+			<a href="#"><i class="icon-remove-sign hide hover"  title="Delete Resource"><span class="label-icon">Delete Resource</span></i></a>
+		</td>
+		<td style="width: 220px">
+			<article>Costa Rican Frog</article>
+			<footer>
+<div class="btn-group dropup metalinks">
+  <button class="btn btn-mini" title="click to copy ID to clipboard">ID 838098</button>
+  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+    <li><a href="#">Edit Asset</a></li>
+    <li><a href="#">View Asset</a></li>
+    <li><a href="#">View XML</a></li>
+    <li><a href="#">View JSON</a></li>
+  </ul>
+</div>
+	 | 12/25/2013 12:35:56 PM</footer>
+		</td>
+		<td>
+		<a href="#preview2" data-toggle="modal"><i class="p-icon-opennewwindow control" title="Open Image"><span class="label-icon">Open Image</span></i><img src="img/Photos/Costa%20Rican%20Frog.jpg" alt="Costa%20Rican%20Frog"></a>
+			
+
+		</td>
+	</tr>			
+		</table>
+		
+			<div id="associatedmessage"  ng-show="!storyform.keyword" style="padding: 1em; color: rgb(224,224,224); font-size: 2em; line-height: 1.1;">
+			No assets have been added to this article yet.
+			</div>
+	
+		</div>
+								
+								</div>
+								
+							</div>
+							
+				</div>
+						
+			</div>										
+						
+				</div>	
+	 		
+	 			<div id="storytitle" class="row-fluid">
+	 		
+	 				<div class="span8">		
+			    
+							<label  class="pull-left">Default Headline</label>
+							<div class="charcount label-text pull-right"><strong ng-bind="0+defaultheadline.length"></strong> / 55</div>
+							<input type="text" class="headline input-xxlarge required" ng-model="defaultheadline" id="defaultheadline" name="defaultheadline" tabindex="1" maxlength="55" required>
+
+</div>
+	 	    
+	 			</div>  
+			
+	 			<div id="storycontent" class="row-fluid">
+			
+					<fieldset id="storymeta" class="span3">	
+			
+					<div id="articlemetacontent">
+	
+				<div class="text-small">
+					<div class="label-text"><strong>created by:</strong> <a href="#">jcranfordt</a></div>
+					<div class="label-text"><strong>modified by:</strong> host</div>
+					<div class="label-text"><strong>last action:</strong> Updated — Jun 17 2013, 9:34am</div>
+				</div>
+				<hr>
+				<h4>Content Type</h4>
+			
+				<section><label>Classification</label>
+				<div class="select2-container ng-valid ng-dirty" id="s2id_autogen9" style="width: 220px;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span>Section</span><abbr class="select2-search-choice-close"></abbr>   <div><b></b></div></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen10" tabindex="0"></div></section>
+
+			<hr>
+				
+				<input type="checkbox" id="developingstory">
+				<label for="developingstory">Developing Story</label>
+			<hr>						
+				
+				<input type="checkbox" id="noadvertising">
+				<label for="noadvertising">Publish Without Advertising</label>
+
+			</div>
+			
+			</fieldset>
+						
+					<fieldset id="storycopy" class="span5">
+				
+						<section id="articlecontent">
+							
+						<div class="row">
+					
+						<label  class="pull-left">Associated Asset</label>
+						<div class="label-text small pull-right">leave blank for front page</div>
+						<input id="storyid" class="input-xlarge" type="text"  name="storyid" placeholder="Enter Asset ID or URL">
+					
+					</div>
+								
+						<div class="row">
+						<label  class="pull-left">Brief</label>
+						<div class="charcount label-text pull-right"><strong ng-bind="0 + brief.length"></strong> / 120</div>
+						<textarea id="brief" ng-model="brief" name="brief" cols="8" rows="8">THIS IS A BREAKING STORY. PLEASE CHECKWWW.USATODAY.COM FOR UPDATES.</textarea>
+					</div>
+					
+						</section>
+
+				</fieldset>
+					
+					<fieldset id="headlinoverrides" class="span8">
+					
+						<h3 class="bordertop span12"><i class="icon-globe"></i> Web/API</h3> 
+		 				 
+		 				<fieldset id="weboverride" class="row-fluid">
+	
+							<div class="span4 sidehead">
+							
+							<h4><i id="status-Banner" ng-class="{true: 'published icon-ok', false: 'unpublished icon-ban-circle'}[isPublishedNow]"></i> Banner</h4>
+								
+							<div ng-show="isPublished" class="xsmall label-text publishdate"><em>3/2/2013 4:48 PM</em></div>
+							
+								<div class="pull-right input-prepend">
+									<button class="btn btn-warning" ng-disabled="!isPublishedNow" ng-click="unpublish()"><i class="icon-ban-circle"></i></button>
+									<input type="number" ng-class="{true: 'expirevalue countdown', false: 'expirevalue'}[isPublishedNow]" class="" value="30">
+								</div>
+							</div>
+						 
+							<div class="span7 headlineoverride">
+							
+							
+							<div class="input-append">
+								<input type="text" placeholder="" ng-model="weboverride1" class="overrideheadline" value="{{defaultheadline}}">
+								<div  class="charcount btn disabled"><strong ng-bind="0 + weboverride.length"></strong> / 55</div>
+								
+								
+								<a href="#preview1" data-toggle="modal" class="btn" ng-disabled="storyform.$invalid"><i class="icon-eye-open"></i></a>
+								<button class="btn btn-success" ng-disabled="storyform.$invalid" ng-click="publish()"><i class="icon-arrow-right"></i></button>
+							</div>
+							
+							</div>
+							
+					
+							
+		 				</fieldset>	
+		 				
+					
+						<h3 class="bordertop span12"><i class="p-icon-mobile"></i> Mobile</h3> 
+		 				
+		 				<fieldset id="mobileoverride" class="row-fluid">
+	
+							<div class="span4 sidehead">
+							<h4><i ng-class="{true: 'published icon-ok', false: 'unpublished icon-ban-circle'}[isPublishedNow]"></i> Banner</h4>
+								
+							<div ng-show="isPublished" class="xsmall label-text publishdate"><em>3/2/2013 4:48 PM</em></div>
+								
+								<div class="pull-right input-prepend">
+									<button class="btn btn-warning" ng-disabled="!isPublishedNow" ng-click="unpublish()"><i class="icon-ban-circle"></i></button>
+									<input type="number" ng-class="{true: 'expirevalue countdown', false: 'expirevalue'}[isPublishedNow]" class="" value="30">
+								</div>
+							</div>
+						
+							
+						
+							<div class="span7 headlineoverride">
+							
+							
+							<div class="input-append">
+								<input type="text" placeholder="" ng-model="weboverride2" class="overrideheadline" value="{{defaultheadline}}">
+								<div  class="charcount btn disabled"><strong ng-bind="0 + weboverride.length"></strong> / 55</div>
+								<a href="#preview1" data-toggle="modal" class="btn" ng-disabled="storyform.$invalid"><i class="icon-eye-open"></i></a>
+								<button class="btn btn-success" ng-disabled="storyform.$invalid" ng-click="publish()"><i class="icon-arrow-right"></i></button>
+							</div>
+							
+							</div>
+							
+		 				</fieldset>		
+		 				
+		 				<fieldset id="movilepushoverride" class="row-fluid">
+	
+							<div class="span4 sidehead">
+							<h4><i ng-class="{true: 'published icon-ok', false: 'unpublished icon-ban-circle'}[isPublished]"></i> Push Alert</h4>
+
+								
+							<div ng-show="isPublished" class="xsmall label-text publishdate"><em>3/2/2013 4:48 PM</em></div>
+							</div>
+						
+							
+						
+							<div class="span7 headlineoverride">
+							
+							 
+							<div class="input-append">
+								<input type="text" placeholder="" ng-model="weboverride3" class="overrideheadline" value="{{defaultheadline}}">
+								<div  class="charcount btn disabled"><strong ng-bind="0 + weboverride.length"></strong> / 55</div>
+								<a href="#preview1" data-toggle="modal" class="btn" ng-disabled="storyform.$invalid"><i class="icon-eye-open"></i></a>
+								<button class="btn btn-success" ng-disabled="storyform.$invalid" ng-click="publish()"><i class="icon-arrow-right"></i></button>
+							</div>
+							
+							</div>
+							
+		 				</fieldset>	 
+		 				
+		 				
+						<h3 class="bordertop span12"><i class="p-icon-tablet"></i> Tablet</h3> 
+		 				
+		 				<fieldset id="tabletbanneroverride" class="row-fluid">
+	
+							<div class="span4 sidehead">
+								<h4><i ng-class="{true: 'published icon-ok', false: 'unpublished icon-ban-circle'}[isPublishedNow]"></i> Banner</h4>
+								
+								
+							<div ng-show="isPublished" class="xsmall label-text publishdate"><em>3/2/2013 4:48 PM</em></div>
+								<div class="pull-right input-prepend">
+									<button class="btn btn-warning" ng-disabled="!isPublishedNow" ng-click="unpublish()"><i class="icon-ban-circle"></i></button>
+									<input type="number" ng-class="{true: 'expirevalue countdown', false: 'expirevalue'}[isPublishedNow]" class="" value="30">
+								</div>
+							</div>
+						
+							
+						
+							<div class="span7 headlineoverride">
+							
+							
+							<div class="input-append">
+								<input type="text" placeholder="" ng-model="weboverride4" class="overrideheadline" value="{{defaultheadline}}">
+								<div  class="charcount btn disabled"><strong ng-bind="0 + weboverride.length"></strong> / 55</div>
+								<a href="#preview1" data-toggle="modal" class="btn" ng-disabled="storyform.$invalid"><i class="icon-eye-open"></i></a>
+								<button class="btn btn-success" ng-disabled="storyform.$invalid" ng-click="publish()"><i class="icon-arrow-right"></i></button>
+							</div>
+							
+							</div>
+							
+		 				</fieldset>		
+		 				
+		 				<fieldset id="tabletpushoverride" class="row-fluid">
+	
+							<div class="span4 sidehead">
+							<h4><i  ng-class="{true: 'error icon-remove', false: 'unpublished icon-ban-circle'}[isPublished]"></i> Push Alert</h4>
+							<div ng-show="isPublished" class="xsmall label-text"><em>3/2/2013 4:48 PM</em> | <a href="#">DETAILS</a></div>
+
+							</div>
+						
+						
+						
+							<div class="span7 headlineoverride">
+							
+							
+							<div class="input-append"><input type="text" placeholder="" ng-model="weboverride8" ng-class="{true: '', false: 'overrideheadline'}[isOverride]" class="overrideheadline" ng-click="hloverride()" value="{{defaultheadline}}">
+								<div  class="charcount btn disabled"><strong ng-bind="0 + weboverride.length"></strong> / 55</div>
+								<a href="#preview1" data-toggle="modal" class="btn" ng-disabled="storyform.$invalid"><i class="icon-eye-open"></i></a>
+								<button class="btn btn-success" ng-disabled="storyform.$invalid" ng-click="publish()"><i class="icon-arrow-right"></i></button>
+							</div>
+							
+							</div>
+							
+		 				</fieldset>	
+		 				
+		 				<h3 class="bordertop span12"><i class="p-icon-twitter"></i> Twitter</h3> 	
+		 				
+		 				<fieldset id="twitteroverride" class="row-fluid">
+	
+							<div class="span4 sidehead">
+							<h4><i ng-class="{true: 'published icon-ok', false: 'unpublished icon-ban-circle'}[isPublished]"></i> Push Alert</h4>
+							<div ng-show="isPublished" class="xsmall label-text publishdate"><em>3/2/2013 4:48 PM</em></div>
+							</div>
+						
+						
+						
+							<div class="span7 headlineoverride">
+							
+							
+							<div class="input-append">
+								<input type="text" placeholder="" ng-model="weboverride5" class="overrideheadline" value="#BREAKING:{{defaultheadline}} usat.ly/1234567 ">
+								<div  class="charcount btn disabled"><strong ng-bind="0 + weboverride.length"></strong> / 140</div>
+								<a href="#preview1" data-toggle="modal" class="btn" ng-disabled="storyform.$invalid"><i class="icon-eye-open"></i></a>
+								<button class="btn btn-success" ng-disabled="storyform.$invalid" ng-click="publish($isPublished)"><i class="icon-arrow-right"></i></button>
+							</div>
+							
+							</div>
+							
+		 				</fieldset> 							
+							
+					</fieldset>
+
+				</div>
+	 			
+			</article>
+					
+	
+			<article id="history" class="tab-pane">
+			<h2>History</h2>
+		</article>
+		
+		</div>
+		
+	</fieldset>
+	
+	</section>
+			
+	
+	<!-- Modal -->
+	<div id="preview2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="preview1" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove-sign"></i></button>
+	    <h3 id="myModalLabel3">USAT»Preview»Boston City Flow</h3>
+	  </div>
+	  <div class="modal-body">
+	    <p><img src="img/Photos/Boston%20City%20Flow.jpg" alt="Boston%20City%20Flow" width="1024" height="683"></p>
+	    <p>In another moment down went Alice after it, never once considering how in the world she was to get out again. <cite>(Photo: Louis Lopez, AP)</cite> </p>
+	  </div>
+	</div>
+
+<!-- Modal -->
+	<div id="preview1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="preview1" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove-sign"></i></button>
+	    <h3 id="myModalLabel3">Preview</h3>
+	  </div>
+
+	</div>
+
+
+	
+<!-- JavaScript -->
+	<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/presto.js"></script>
+    
+    <script>  
+
+
+		
+    </script>
+    
+  </form>
+  </body>
+</html>

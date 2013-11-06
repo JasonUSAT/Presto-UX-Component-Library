@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" ng-app="components">
+  <head>
+	<meta charset="utf-8">
+    <title>Presto | Create | Breaking News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="css/presto.css" rel="stylesheet" media="screen">
+    <link href="css/select2.css" rel="stylesheet" media="screen">
+    <link href="css/webfont-icons.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+<form id="storyform" name="storyform" novalidate>
+
+<!-- Content -->
+
+<header id="prestoheader" class="container">
+	  <nav class="row-fluid navbar">
+      	<div class="navbar-inner">
+                <div class="container">
+                  <a class="brand" href="#">
+                  <img src="img/presto-design-logo.png" alt="presto-design-logo">
+                  </a>
+                  <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav">
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">View <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Content Dashboard</a></li>
+                          <li><a href="#">Asset Gallery</a></li>
+                          <li><a href="#">Wires</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#"><strong>More…</strong></a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Create <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li class="nav-header">Articles</li>
+                          <li class="dropdown-submenu">
+                          	<a tabindex="-1" href="#">Blog Post</a>
+						  	<ul class="dropdown-menu">
+								<li><a href="#">App Insider		  </a></li>	
+								<li><a href="#">Book Buzz		  </a></li>	
+								<li><a href="#">Book Review		  </a></li>	
+								<li><a href="#">Breaking News	  </a></li>	
+								<li><a href="#">Campus Rivalry	  </a></li>	
+								<li><a href="#">Corrections		  </a></li>	
+								<li><a href="#">Cruise Log		  </a></li>	
+								<li><a href="#">CyberTruth		  </a></li>	
+								<li><a href="#">Daily Pitch		  </a></li>	
+								<li><a href="#">Dispatches		  </a></li>	
+								<li><a href="#">Drive On		  </a></li>	
+								<li><a href="#">Event			  </a></li>	
+								<li><a href="#">Faith & Reason	  </a></li>	
+								<li><a href="#">Fantasy Joe		  </a></li>	
+								<li><a href="#">Fantasy Windup	  </a></li>	
+								<li><a href="#">Fighting Stances  </a></li>	
+								<li><a href="#">Game Hunters	  </a></li>	
+								<li><a href="#">Game On!		  </a></li>	
+								<li><a href="#">Green House		  </a></li>	
+								<li><a href="#">Happy Ever After  </a></li>	
+								<li><a href="#">Hotel Check-In	  </a></li>	
+								<li><a href="#">Idol Chatter	  </a></li>	
+								<li><a href="#">Idol Meter		  </a></li>	
+								<li><a href="#">Kindness		  </a></li>	
+								<li><a href="#">Lifeline Live	  </a></li>	
+								<li><a href="#">Live From		  </a></li>	
+								<li><a href="#">On Deadline		  </a></li>	
+								<li><a href="#">On Politics		  </a></li>	
+								<li><a href="#">Paw Print Post	  </a></li>	
+								<li><a href="#">Points of Interest</a></li>	
+								<li><a href="#">Pop Candy		  </a></li>	
+								<li><a href="#">Pressreleases	  </a></li>	
+								<li><a href="#">Promo			  </a></li>	
+								<li><a href="#">Science Fair	  </a></li>	
+								<li><a href="#">Short Takes		  </a></li>	
+								<li><a href="#">Technology Live	  </a></li>	
+								<li><a href="#">Test			  </a></li>	
+								<li><a href="#">The Huddle		  </a></li>	
+								<li><a href="#">The Oval		  </a></li>	
+								<li><a href="#">Today in the Sky  </a></li>	
+								<li><a href="#">View from China	  </a></li>	
+	                        </ul>
+                          </li>
+                          <li><a href="#">Story</a></li>
+                          <li><a href="#">Breaking News</a></li>
+                          <li><a href="#">Book Review</a></li>
+                          <li class="divider"></li>
+                          <li class="nav-header">Assets</li>
+                          <li><a href="#">Gallery</a></li>
+                          <li><a href="#">Video</a></li>
+                          <li><a href="#">Multi-Image Upload</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#"><strong>More…</strong></a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          	<li class="nav-header">Sections</li>
+							<li><a href="#">Home				  </a></li>
+							<li><a href="#">News				  </a></li>
+							<li><a href="#">Sports				  </a></li>
+							<li><a href="#">Life				  </a></li>
+							<li><a href="#">Money				  </a></li>
+							<li><a href="#">Tech				  </a></li>
+							<li><a href="#">Travel				  </a></li>
+	                        <li class="divider"></li>
+							<li class="nav-header">Special</li>
+							<li><a href="#">Curated Topic		  </a></li>
+							<li><a href="#">Global Modules		  </a></li>
+							<li><a href="#">Html Edit Test		  </a></li>
+							<li><a href="#">Manage Fronts		  </a></li>
+							<li><a href="#">Mobile Config Tool	  </a></li>
+							<li><a href="#">Social Media		  </a></li>
+							<li><a href="#">Staff Edit			  </a></li>
+							<li><a href="#">Staff Maintenance	  </a></li>
+							<li><a href="#">User Generated Content</a></li>
+	                        <li class="divider"></li>
+	                        <li><a href="#"><strong>More…</strong></a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                   </div><!-- /.nav-collapse -->
+                </div>
+        </div><!-- /navbar-inner -->
+      </nav>
+	</header>
+  
+<section id="page" ng-controller="Controller" class="container">
+		
+		<div id="breadcrumb" class="row-fluid">	
+			<ul class="breadcrumb">
+			  <li><a href="#">Content Dashboard</a><span class="divider">/</span></li>
+			  <li><a href="#">Create</a><span class="divider">/</span></li>
+			  <li><strong>Breaking News</strong></li>
+			 </ul>
+		</div>	
+	
+		<fieldset class="tabbable">
+
+
+	<div id="storyurl" class="pull-right" style="">
+		<div class=""> 
+				
+				<div class="btn-group dropup metalinks">
+				
+				<button  class="btn btn-mini" title="click to copy ID to clipboard"><strong>URL</strong> http://www.usatoday.com/story/weather/2012/12/05/arctic-report-card-noaa/1748861/</button>
+			  <button class="btn btn-mini" title="click to copy ID to clipboard"><strong>ID</strong> 838098</button>
+			  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			    <!-- dropdown menu links -->
+			    <li><a href="#">Edit Asset</a></li>
+			    <li><a href="#">View Asset</a></li>
+			    <li><a href="#">View XML</a></li>
+			    <li><a href="#">View JSON</a></li>
+			  </ul>
+			</div>
+		</div>
+	</div>
+
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#story" data-toggle="tab">Story</a></li>
+		<li><a href="#history" data-toggle="tab">history</a></li>
+	</ul>
+	
+	<div class="tab-content">
+		
+		<article id="story" class="tab-pane active">
+ 		
+ 			<div id="storycontrols" class="offset8 span4 affix">
+			
+			<div class="alert alert-warning text-small">
+				<strong>tjefferson</strong> and <strong>bfranklin</strong> are editing this story
+			</div>
+		
+			<fieldset id="draftcontrols" class="draftcontrols">
+
+<div class="content"><div id="draftmessage" class="status draft pull-left">DRAFT</div> 
+
+<div id="saving" class="label-text pull-right small">Saving…</div>
+
+<div id="draftmessageoff" class="save-message pull-clear">NOT SAVED</div>
+
+			<div id="lastsaved" class="savemessage hide"><strong>Saved:</strong> 1 min ago (3/21/2013 4:48 pm)</div>
+			
+			<div class="btn-group">
+			<button class="btn" type="button"> <i class="icon-check"></i></button>
+			<button class="btn" ng-disabled="storyform.$invalid" tabindex="2">Save</button>
+			<button id="previebtn" class="btn" ng-disabled="storyform.$invalid">Preview</button>
+			</div>
+</div>							
+			
+		</fieldset>
+					
+			<fieldset id="publishcontrols" class="publishcontrols">	
+		
+					<div class="btn-group content pull-left">
+						<button class="btn btn-warning" ng-disabled="storyform.$invalid">Expire All Now</button>
+						<button class="btn btn-success" ng-disabled="storyform.$invalid">Send All</button>
+					</div>
+											
+					
+					</fieldset>
+
+			<div id="assetlibrary">
+							
+				<div class="tabbable">
+				
+				  <ul class="nav nav-tabs">
+				    <li class="active"><a href="#search" data-toggle="tab"><i class="icon-search"></i></a></li>
+				    <li><a href="#assets" data-toggle="tab">Assets</a></li>
+				  </ul>
+							
+				  <div class="tab-content asset-content">
+							
+					  <div class="tab-pane active form-search" id="search" title="search">
+									
+						<header>
+									
+							<div class="input-append">
+
+							 <input type="search" ng-model="storyform.keyword" placeholder="Keyword/Content ID">
+										    
+							    <div class="btn-group">
+									<button type="submit" class="btn"><i class="icon-search"></i></button>
+							    </div>
+							</div>
+									
+						</header>
+						
+						<div class="assetlist" style="">
+					
+							<table id="searchresults" ng-show="storyform.keyword" style="width: 100%">
+									
+																		
+	<tr draggable="true">
+		<td>
+			<i class="icon-camera" title="image"></i>
+			<a href="#"><i class="icon-plus-sign hide hover" title="Associate but do not Insert"><span class="label-icon">Associate</span></i></a>
+		</td>
+		<td style="width: 220px;">
+			<article>Pensive Parakeet</article>
+			<footer><div class="btn-group dropup metalinks">
+  <button class="btn btn-mini" title="click to copy ID to clipboard">ID 838098</button>
+  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+    <li><a href="#">Edit Asset</a></li>
+    <li><a href="#">View Asset</a></li>
+    <li><a href="#">View XML</a></li>
+    <li><a href="#">View JSON</a></li>
+  </ul>
+</div> | 12/25/2013 12:35:56 PM</footer>
+		</td>
+		<td><a  href="#preview2" data-toggle="modal"><i class="p-icon-opennewwindow control" title="Open Image"><span class="label-icon">Open Image</span></i>
+			<img src="../../../Photos/Sample%20Album/Pensive%20Parakeet.jpg" alt="Pensive%20Parakeet" width="100"></a>
+		</td>
+	</tr>
+	
+	<tr draggable="true">
+		<td>
+			<i class="icon-camera" title="image"></i>
+			<a href="#"><i class="icon-plus-sign hide hover" title="Associate but do not Insert"><span class="label-icon">Associate</span></i></a>
+		</td>
+		<td>
+			<article><strong>External Video:</strong> Boston City Flow</article>
+			<footer><div class="btn-group dropup metalinks">
+  <button class="btn btn-mini" title="click to copy ID to clipboard">ID 838098</button>
+  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+    <li><a href="#">Edit Asset</a></li>
+    <li><a href="#">View Asset</a></li>
+    <li><a href="#">View XML</a></li>
+    <li><a href="#">View JSON</a></li>
+  </ul>
+</div> | 12/25/2013 12:35:56 PM</footer>
+		</td>
+		<td>
+		<a  href="#preview2" data-toggle="modal"><i class="p-icon-opennewwindow control" title="Open Image"><span class="label-icon">Open Image</span></i>
+					<img src="../../../Photos/Sample%20Album/Boston%20City%20Flow.jpg" alt="Boston%20City%20Flow" width="100"></a>
+		</td>
+	</tr>
+	
+	<tr draggable="true">
+		<td>
+			<i class="icon-camera" title="image"></i>
+			
+			<a href="#"><i class="icon-plus-sign hide hover" title="Associate but do not Insert"><span class="label-icon">Associate</span></i></a>
+		</td>
+		<td>
+			<article><strong>Gallery:</strong> Costa Rican Frog</article>
+			<footer><div class="btn-group dropup metalinks">
+  <button class="btn btn-mini" title="click to copy ID to clipboard">ID 838098</button>
+  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+    <li><a href="#">Edit Asset</a></li>
+    <li><a href="#">View Asset</a></li>
+    <li><a href="#">View XML</a></li>
+    <li><a href="#">View JSON</a></li>
+  </ul>
+</div> | 12/25/2013 12:35:56 PM</footer>
+		</td>
+		<td><a  href="#preview2" data-toggle="modal"><i class="p-icon-opennewwindow control" title="Open Image"><span class="label-icon">Open Image</span></i>
+		<img src="../../../Photos/Sample%20Album/Costa%20Rican%20Frog.jpg" alt="Costa%20Rican%20Frog" width="100" height="768"></a>
+		</td>
+	</tr>
+	
+		
+				
+	
+</table>
+						
+							<div id="searchmessage1" class="message" ng-hide="storyform.keyword">
+								Enter keyword or content ID above to begin search.
+							</div>
+							
+							<div id="searchmessage2"  class="message error" ng-show="">
+								Sorry, 0 results were found. Please try a different keyword or content ID.
+							</div>
+						
+						</div>
+
+									
+				</div>
+															
+		<div class="tab-pane" id="assets" title="A">
+		<header>
+			<span class="badge">0</span> Assets
+		</header>
+		
+		<div class="assetlist">
+
+			<table id="associated" ng-show="storyform.keyword" tyle="width: 100%">
+			<tr draggable="true" class="priority">
+		<td>
+					
+			<i class="icon-camera" title="Gallery"><span class="label-icon">Image</span></i>
+			<a href="#"><i class="icon-remove-sign hide hover"  title="Delete Resource"><span class="label-icon">Delete Resource</span></i></a>
+		</td>
+		<td style="width: 220px">
+			<article>Costa Rican Frog</article>
+			<footer>
+<div class="btn-group dropup metalinks">
+  <button class="btn btn-mini" title="click to copy ID to clipboard">ID 838098</button>
+  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+    <li><a href="#">Edit Asset</a></li>
+    <li><a href="#">View Asset</a></li>
+    <li><a href="#">View XML</a></li>
+    <li><a href="#">View JSON</a></li>
+  </ul>
+</div>
+	 | 12/25/2013 12:35:56 PM</footer>
+		</td>
+		<td>
+		<a href="#preview2" data-toggle="modal"><i class="p-icon-opennewwindow control" title="Open Image"><span class="label-icon">Open Image</span></i><img src="../../../Photos/Sample%20Album/Costa%20Rican%20Frog.jpg" alt="Costa%20Rican%20Frog"></a>
+			
+
+		</td>
+	</tr>			
+		</table>
+		
+			<div id="associatedmessage"  ng-show="!storyform.keyword" style="padding: 1em; color: rgb(224,224,224); font-size: 2em; line-height: 1.1;">
+			No assets have been added to this article yet.
+			</div>
+	
+		</div>
+								
+								</div>
+								
+							</div>
+							
+				</div>
+						
+			</div>										
+					
+		</div>	
+ 		
+ 			<div id="storytitle" class="row-fluid">
+ 		
+ 			<div class="span8">		
+			    
+							<label  class="pull-left">Default Headline</label>
+							<div class="charcount label-text pull-right"><strong ng-bind="0+defaultheadline.length"></strong> / 55</div>
+							<input type="text" class="headline input-xxlarge required" ng-model="defaultheadline" id="defaultheadline" name="defaultheadline" tabindex="1" maxlength="55" required>
+
+</div>
+ 	    
+		 </div>  
+		
+ 			<div id="storycontent" class="row-fluid">
+			
+				<fieldset id="storymeta" class="span3">	
+			
+					<div id="articlemetacontent">
+	
+				<div class="text-small">
+					<div class="label-text"><strong>created by:</strong> <a href="#">jcranfordt</a></div>
+					<div class="label-text"><strong>modified by:</strong> host</div>
+					<div class="label-text"><strong>last action:</strong> Updated — Jun 17 2013, 9:34am</div>
+				</div>
+				<hr>
+				<h4>Content Type</h4>
+			
+				<section><label>Classification</label>
+				<div class="select2-container ng-valid ng-dirty" id="s2id_autogen9" style="width: 220px;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span>Section</span><abbr class="select2-search-choice-close"></abbr>   <div><b></b></div></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen10" tabindex="0"></div></section>
+
+			<hr>
+				<input class='pull-left' type='checkbox'> 
+				<label>Developing Story</label>
+			<hr>						
+				<input class='pull-left' type='checkbox'> 
+				<label>Publish Without Advertising</label>
+
+			</div>
+			
+			</fieldset>
+					
+				<fieldset id="storycopy" class="span5">
+				
+					<section id="articlecontent">
+						
+					<div class="row">
+					
+						<label  class="pull-left">Associated Asset</label>
+						<div class="label-text small pull-right">leave blank for front page</div>
+						<input id="storyid" class="input-xlarge" type="text"  name="storyid" placeholder="Enter Asset ID or URL">
+					
+					</div>
+							
+					<div class="row">
+						<label  class="pull-left">Brief</label>
+						<div class="charcount label-text pull-right"><strong ng-bind="0 + brief.length"></strong> / 120</div>
+						<textarea id="brief" ng-model="brief" name="brief" cols="8" rows="5" placeholder="THIS IS A BREAKING STORY. PLEASE CHECK <a href='http://www.usatoday.com'>WWW.USATODAY.COM</a> FOR UPDATES."></textarea>
+					</div>
+					
+					<fieldset id="weboverrride" class="row border-top alternateheadlines">
+						
+						<h4 class="span12"><i class="icon-globe"></i> Web/API</h4>
+						
+						<div class="row-fluid alternatecopy">						
+
+							<div class="row-fluid">
+						
+								<div class="span10">
+									<label class="pull-left" >Banner</label>
+									<div class="charcount label-text pull-right"><strong ng-bind="0 + weboverride.length"></strong> / 55</div>
+									<input type="text" ng-model="weboverride" class="overrideheadline" value="{{defaultheadline}}">
+							</div>
+							
+							<div class="span2 expires">
+								<input type="number" id="webheadlineexpired" class="expirevalue" value="30">
+								<small>min</small>
+							</div>
+							</div>
+								
+							<div class="statusmessage row-fluid">							
+								
+								<div class="span7">
+									 <span class="status draft"><i class="icon-ban-circle"></i> Not Sent</span>								
+						
+								</div>
+							
+								<div class="span5">
+								<button class="btn btn-mini" type="button" ng-disabled="storyform.$invalid">Preview</button><div class="publish btn-group pull-right">
+								<button class="btn btn-mini btn-warning" ng-disabled="storyform.$invalid">Expire Now</button>
+								<button class="btn btn-mini btn-success" type="button" ng-disabled="storyform.$invalid">Send</button>
+							</div></div>
+							
+							</div>
+							
+						</div>	
+							
+					</fieldset>
+					
+					<fieldset id="mobileoverrride" class="row border-top alternateheadlines">
+						
+						<h4 class="span12"><i class="p-icon-mobile"></i> Mobile</h4>
+						
+						<div class="row-fluid alternatecopy">						
+
+							<div class="row-fluid">
+						
+								<div class="span10">
+									<label class="pull-left" >Banner</label>
+									<div class="charcount label-text pull-right"><strong ng-bind="0 + mobileheadline.length"></strong> / 55</div>
+									<input type="text" ng-model="mobileheadline" class="overrideheadline" value="{{defaultheadline}}">
+							</div>
+							
+							<div class="span2 expires">
+								<input type="number" id="mobilebanneroverride" class="expirevalue" value="0">
+								<small>min</small>
+							</div>
+							
+							</div>
+								
+							<div class="statusmessage row-fluid">							
+								
+								<div class="span7">
+									 
+									<span class="status expired"><i class="icon-ban-circle"></i> Expired</span>										
+									<em>3/2/2013 4:48 PM</em>
+								</div>
+							
+								<div class="span5">
+								<button class="btn btn-mini" type="button" ng-disabled="storyform.$invalid">Preview</button><div class="publish btn-group pull-right">
+								<button class="btn btn-mini btn-warning" ng-disabled="storyform.$invalid">Expire Now</button>
+								<button class="btn btn-mini btn-success" type="button" ng-disabled="storyform.$invalid">Send</button>
+							</div>
+							
+							</div>
+							
+							</div>
+							
+						</div>
+						
+						<div class="row-fluid alternatecopy">						
+
+							<div class="row-fluid">
+						
+								<div class="span12">
+									<label class="pull-left" >Push Alert Message</label>
+									<div class="charcount label-text pull-right"><strong ng-bind="0 + mobilealert.length"></strong> / 55</div>
+									<input type="text" id="mobilealert" class="overrideheadline" value="{{defaultheadline}}">
+							</div>
+						
+							
+							</div>
+								
+							<div class="statusmessage row-fluid">							
+								
+								<div class="span7">
+									 
+									<span class="status error"><i class="icon-remove"></i> Failed</span>
+									<em>3/2/2013 4:48 PM</em> | <a href="#">DETAILS</a>
+								</div>
+							
+								<div class="span5" style="text-align: right;">
+								<button class="btn btn-mini" type="button" ng-disabled="storyform.$invalid">Preview</button>
+								<button class="btn btn-mini btn-success" type="button" ng-disabled="storyform.$invalid">Send</button>
+						
+				<div class='pull-right' > 
+					<label class="text-small">Exclude from Older Devices <input type='checkbox'></label></div>
+				</div>
+							
+						</div>
+						
+						</div>
+							
+					</fieldset>
+					
+					<fieldset id="tabletoverrride" class="row border-top alternateheadlines">
+						
+						<h4 class="span12"><i class="p-icon-tablet"></i> Tablet</h4>
+						
+						<div class="row-fluid alternatecopy">						
+
+							<div class="row-fluid">
+						
+								<div class="span10">
+									<label class="pull-left" >Banner</label>
+									<div class="charcount label-text pull-right"><strong ng-bind="0 + tabletheadline.length"></strong> / 55</div>
+									<input type="text" ng-model="tabletheadline" class="overrideheadline" value="{{defaultheadline}}">
+							</div>
+							
+							<div class="span2 expires">
+								<input type="number" id="tabletbannerexpire" class="expirevalue countdown" value="23"> <small>min</small>
+							</div>
+							
+							</div>
+								
+							<div class="row-fluid">							
+								
+								<div class="span6 statusmessage">
+									
+									<span class="status published"><i class="icon-ok"></i> Sent</span>
+									<em>3/2/2013 4:48 PM</em> 
+								</div>
+							
+								<div class="span6">
+								<button class="btn btn-mini" type="button" ng-disabled="storyform.$invalid">Preview</button><div class="publish btn-group pull-right">
+								<button class="btn btn-mini btn-warning" ng-disabled="storyform.$invalid">Expire Now</button>
+								<button class="btn btn-mini btn-success" type="button" ng-disabled="storyform.$invalid">Send</button>
+							</div></div>
+							
+							</div>
+							
+						</div>
+						
+						<div class="row-fluid alternatecopy disabled">
+						
+							<i class="p-icon-spinner spinner control" title="waiting" aria-hidden="true"><span class="label-icon">Loading…</span></i>					 
+
+							<div class="row-fluid">
+						
+								<div class="span12">
+									<label class="pull-left" >Push Alert Message</label>
+									<div class="charcount label-text pull-right"><strong ng-bind="0 + tabletalert.length"></strong> / 55</div>
+									<input type="text" ng-mobile="tabletalert" class="overrideheadline" value="{{defaultheadline}}">
+							</div>
+	
+							
+							</div>
+								
+							<div class="statusmessage row-fluid">							
+								
+								<div class="span7">
+									
+									<span class="status processing"><i class="icon-arrow-right"></i> Sending</span>
+									<em>3/2/2013 4:48 PM</em>
+								</div>
+							
+								<div class="span5" style="text-align: right;">
+								<button class="btn btn-mini" type="button" ng-disabled="storyform.$invalid">Preview</button>
+								<button class="btn btn-mini btn-success" type="button" ng-disabled="storyform.$invalid">Send</button>
+							</div>
+							
+							</div>
+							
+						</div>	
+							
+					</fieldset>
+					
+					<fieldset id="twitteroverrride" class="row border-top alternateheadlines">
+						
+						<h4 class="span12"><i class="p-icon-twitter"></i> Twitter</h4>
+						
+						<div class="row-fluid alternatecopy">						
+
+							<div class="row-fluid">
+						
+								<div class="span12">
+									<label class="pull-left" >Push Alert Message</label>
+									<div class="charcount label-text pull-right"><strong ng-bind="0 + twittermessage.length"></strong> / 144</div>
+									<input type="text" ng-model="twittermessage" class="overrideheadline" value="#BREAKING: {{defaultheadline}} usat.ly/1234567 ">
+								</div>
+							
+							</div>
+								
+							<div class="statusmessage row-fluid">							
+								
+								<div class="span7 pull-left">
+									 <span class="status draft">
+									<i class="icon-ban-circle"></i> Not Sent</span>										
+	<br>										<!--	<em>3/2/2013 4:48 PM</em>
+									-->
+						
+								</div>
+								
+								<div class="span5" style="text-align: right;">
+								<button class="btn btn-mini btn-success" type="button" ng-disabled="storyform.$invalid">Send</button>
+						
+							</div>
+							
+							</div>
+							
+						</div>	
+							
+					</fieldset>
+	
+				</section>
+				
+				</fieldset>
+			
+		</div>
+		
+		</article>
+		
+		<article id="history" class="tab-pane">
+			<h2>History</h2>
+		</article>
+		
+	</div>
+	
+</fieldset>		
+	
+	</section>
+			
+	
+<footer class="container">
+	
+		<div class="row-fluid bordertop label-text">
+				
+            <span class="pull-right">
+                <a id="dnn_dnnTerms_hypTerms" class="LoginLink" rel="nofollow" href="http://presto-dev.usatoday.com/terms.aspx">Terms Of Use</a> | <a id="dnn_dnnPrivacy_hypPrivacy" class="LoginLink" rel="nofollow" href="http://presto-dev.usatoday.com/privacy.aspx">Privacy Statement</a>
+            </span>	
+            
+			<img src="img/logo-presto-footer.svg" alt="logo-presto-footer">
+			
+            <div id="Copyright">
+      
+				<span id="dnn_dnnCopyright_lblCopyright" class="Copyright">Copyright © 2012 by Gannett Digital</span>
+            </div>
+        </div>
+
+</footer>
+	
+<!-- JavaScript -->
+	<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/select2.min.js"></script>
+    
+    <script>
+	    
+	    function Controller($scope) {
+		  $scope.master= {};
+		 
+		  $scope.update = function(ele) {
+		    $scope.master= angular.copy(ele);
+		  };
+		 
+		  $scope.reset = function() {
+		    $scope.ele = angular.copy($scope.master);
+		  };
+		 
+		  $scope.isUnchanged = function(ele) {
+		    return angular.equals(ele, $scope.master);
+		  };
+		 
+		  $scope.reset();
+		}
+		
+    </script>
+    
+  </form>
+  </body>
+</html>

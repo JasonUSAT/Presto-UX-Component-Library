@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" ng-app="components">
+
+  <head>
+	<meta charset="utf-8">
+    <title>Presto | TEMPLATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+    <link href="css/module.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/presto-ui.css" rel="stylesheet" media="screen">
+    <link href="css/pstrap.css" rel="stylesheet" media="screen">
+    <link href="css/select2.css" rel="stylesheet" media="screen">
+
+    
+  </head>
+  
+<body id="Body" style="padding: 2em">
+    
+    <form  id="Form" enctype="multipart/form-data" name="storyform">
+
+
+<div class="btn-group dropdown metalinks">
+<button class="btn btn-mini" title="click to copy ID to clipboard">ID 838098</button>
+<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	<ul class="dropdown-menu">
+	<!-- dropdown menu links -->
+	
+	<ul>
+		<li><strong>Origin:</strong></li>
+	</ul>
+	
+	<hr>
+	
+	<li><a href="#">Edit Asset</a></li>
+	<li><a href="#">View Asset</a></li>
+	<li><a href="#">View XML</a></li>
+	<li><a href="#">View JSON</a></li>
+	</ul>
+</div>
+
+
+<hr>
+
+<section id="assetBar">
+
+<div id="savecontrols" class="saveControls content">
+    <div class="messageContainer">
+        <div>
+            <div class="uppercase pull-right assetStatus">
+                <span ng-show="model.status" ng-class="model.status" class="ng-binding draft" style="">draft</span>
+                <span ng-show="!model.status" style="display: none;">DRAFT</span>
+            </div>
+            <div class="label-text pull-left">
+                <span ng-show="state.isSavingDraft || state.isPublishing" style="display: none;"><i class="p-icon-spinner spinner"></i> <small><strong>Saving</strong></small></span>
+                <span class="uppercase text-small danger strong" ng-show="!state.isSavingDraft" style="display: none;">NOT SAVED</span>
+                <span class="savedOn" ng-show="model.updatedOn !(state.isSavingDraft || state.isPublishing)" style=""><small class="ng-binding"><strong>Saved:</strong> 1 hr ago (8/28/13 9:42 AM)</small></span>
+            </div>
+            <br class="clear">
+        </div>
+    </div>
+    <div class="btn-group">			    
+		<button id="fullscreen" title="Click for Full Screen View" ng-click="togglefullscreen()" class="btn"><i class="icon-fullscreen"></i></button>
+
+		<a id="previewbtn" title="Click to Preview" class="btn"  ng-disabled="!validate.canSaveDraft()" href="http://www.usatoday.com" target="preview"><i class="icon-eye-open"></i></a>
+        
+       </div>
+        
+       <div class="btn-group">
+
+		<button  title="Click to send to Newsgate" class="btn"  ng-disabled="!validate.canSaveDraft()" ng-click="savedraft()" tabindex="2"><i class="icon- icon-arrow-right"></i> Newsgate</button>
+
+        <button type="button" title="Click to save Draft" id="savedraft" class="btn btn-primary" ng-click="saveDraft()" ng-disabled="!validate.canSaveDraft()">
+            Save
+        </button>
+    </div>
+ </div>
+ 
+ 
+ </section>
+ 
+ </form>		
+		
+<!-- JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/components.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/presto.js"></script>
+    
+		
+		

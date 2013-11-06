@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Presto Prototype</title>
+        <link href="css/module.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="css/presto-ui.css" rel="stylesheet" media="screen">
+        <link href="css/pstrap.css" rel="stylesheet" media="screen">
+        <link href="css/select2.css" rel="stylesheet" media="screen">
+        <link href="css/presto-ux.css" rel="stylesheet" media="screen">
+    </head>
+    <body id="Body">
+        <form  id="Form" enctype="multipart/form-data" name="storyform">
+
+            <ng-include src="'partials/presto-head.html'"></ng-include>
+
+            <section id="Content" class="row-fluid" ng-controller="Controller">
+
+                <ng-include src="'partials/presto-assettabs.html'"></ng-include>
+
+                <div class="tab-content" id="Panes" style="margin: 0 20px;">
+
+                    <article id="story" class="tab-pane active">
+
+                        <div class="clearfix">
+
+                            <div class="ContainerWrapper"></div>
+
+                            <div class="row-fluid">
+
+                                <div id="story" class="span8">
+
+                                    <ng-include src="'partials/presto-title.html'"></ng-include>
+
+                                    <div id="storydata" class="row-fluid">
+
+                                        <div id="metadata" class="span5" style="height:800px overflow: auto;">
+
+                                            <ng-include src="'partials/presto-meta.html'"></ng-include>
+
+                                        </div>
+
+                                        <div id="bodydata" class="span7">
+
+                                            <div class="col2">
+
+                                                <div id="urlending" class="control-group">
+                                                    <span class="fieldlabel"><label for="urlending">URL Ending</label></span>
+                                                    <input value="{{storyheadline}}"  type="text" class="required" name="urlending" ng-model="urlending" tabindex="2">
+                                                </div>
+
+                                                <div id="mobileheadline">
+                                                    <span class="fieldlabel"><label class="pull-left" for="shorthead">Mobile Headline</label>
+                                                        <div class="char-count label-text pull-right">
+                                                            <strong ng-bind="0+shorthead.length"></strong> / 90
+                                                        </div> </span>
+                                                    <input value="{{storyheadline}}"  type="text" name="mobileheadline" ng-model="mobileheadline" tabindex="3">
+                                                </div>
+
+                                                <div id="articlehighlights" style=" -moz-column-break-after:always; -webkit-column-break-after:always; column-break-after:always;">
+                                                    <div class="char-count label-text pull-right">
+                                                        <strong ng-bind="0+highlight1.length"></strong> / 99
+                                                    </div>
+                                                    <input type="text" class="storyhighlights1" ng-model="highlight1" id="storyhighlights1" name="storyhighlights1" placeholder="highlight1" style="border-radius: 5px 5px 0 0; margin-bottom: -1px;" onblur="showMe('storyhighlights2')" tabindex="10">
+                                                    <input type="text" class="" ng-model="highlight2" id="storyhighlights2" name="storyhighlights2" placeholder="highlight2" style="border-radius: 0; margin-bottom: -1px;" onblur="showMe('storyhighlights3')" tabindex="11">
+                                                    <input type="text" class="" ng-model="highlight3" id="storyhighlights3" name="storyhighlights4" placeholder="highlight3" style="border-radius: 0; margin-bottom: -1px;" onblur="showMe('storyhighlights4')" tabindex="12">
+                                                    <input type="text" class="" ng-model="highlight4" id="storyhighlights4" name="storyhighlights3" placeholder="highlight4" style="border-radius: 0 0 5px 5px;" tabindex="13">
+                                                </div>
+
+                                                <div id="promobrief">
+                                                    <span class="fieldlabel"> <label class="pull-left" for="brief">Promo Brief</label>
+                                                        <div class="char-count label-text pull-right">
+                                                            <strong ng-bind="0+promobrief.length"></strong> / 120
+                                                        </div> </span>
+                                                    <textarea placeholder="" ng-model="promobrief" name="promobrief" rows="5"></textarea>
+                                                </div>
+
+                                                <div id="articlesummary">
+                                                    <span class="fieldlabel"> <label class="pull-left" for="summary">Summary</label>
+                                                        <div class="char-count label-text pull-right">
+                                                            <strong ng-bind="0+summary.length"></strong> / 120
+                                                        </div> </span>
+                                                    <textarea placeholder="" ng-model="summary" name="summary" rows="5"></textarea>
+                                                </div>
+
+                                            </div>
+
+
+                                            
+                                            <div>
+                                                <div id="epiceditor" style="height: 500px;"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div id="storycontrols" class="span4 pull-right" style="width: 305px">
+
+                                    <div id="assetBar">
+
+                                        <ng-include src="'partials/presto-save.html'"></ng-include>
+
+                                        <ng-include src="'partials/presto-publish.html'"></ng-include>
+
+                                        <ng-include src="'partials/presto-assetspanel.html'"></ng-include>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article id="versions" class="tab-pane">
+                        Versions
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Modal -->
+            <div id="preview1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="preview1" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="icon-remove-sign"></i>
+                    </button>
+                    <h3 id="myModalLabel3">USAT»Preview»Boston City Flow</h3>
+                </div>
+                <div class="modal-body">
+                    <p><img src="img/Boston_City_Flow.jpg" alt="Boston%20City%20Flow" width="1024" height="683">
+                    </p>
+                    <p>
+                        In another moment down went Alice after it, never once considering how in the world she was to get out again. <cite>(Photo: Louis Lopez, AP)</cite>
+                    </p>
+                </div>
+            </div>
+
+            <!-- In production use:
+            <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+            -->
+            <script src="js/jquery.min.js"></script>
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+            <script src="js/select2.min.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+            <script src="js/presto.js"></script>
+            <script src="js/components.js"></script>
+            <script src="js/app.js"></script>
+            <script src="js/services.js"></script>
+            <script src="js/resources.js"></script>
+            <script src="js/controllers.js"></script>
+            <script src="js/filters.js"></script>
+            <script src="js/directives.js"></script>
+
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+            <script src="lib/EpicEditor/epiceditor/js/epiceditor.min.js"></script>
+
+            <script>
+                $(window).load(function startPage() {
+                    startEditor();
+                });
+                
+                function startEditor() {
+                    var editor = new EpicEditor().load();
+                    console.log('loaded')
+                }
+            </script>
+    </body>
+</html>

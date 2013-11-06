@@ -1,0 +1,66 @@
+
+<!--#include virtual="presto-head.html" -->
+
+<section id="Content" class="row-fluid" ng-controller="Controller">
+
+<!--#include virtual="presto-assettabs.html" -->
+	
+	<div class="tab-content" id="Panes" style="margin: 0 20px;">
+		
+		<article id="story" class="tab-pane active">
+
+			<div class="clearfix">
+			
+				<div class="ContainerWrapper"></div>
+				
+					<div class="row-fluid">
+	    			
+	    				<div id="story" class="span8" style="width: 70%">
+	    				
+							<!--#include virtual="presto-title.html" -->
+	    				
+		    				<div id="storydata" class="row-fluid">
+			    				
+			    				<div id="metadata" class="span5" style="height:800px;width: 304px; overflow: auto;">
+			    					
+			    					<!--#include virtual="presto-meta.html" -->
+								
+								</div>
+			    				
+			    				<div id="bodydata" class="span8" style="width: 65%">
+			    				
+				    				<!--#include virtual="presto-body-breakingnews.html" -->
+				    				
+			    				</div>
+			    				
+		    				</div>
+		    				
+	    				</div>
+	    		
+						<div id="storycontrols" class="span4 pull-right" style="width: 305px">
+	    				
+							<div id="assetBar">
+								
+								<!--#include virtual="presto-save.html" -->
+			    				
+								<!--#include virtual="presto-publish.html" -->
+			    					
+			    				<!--#include virtual="presto-assetspanel.html" -->
+			    				
+			    			</div>
+	    			
+						</div>
+	    			
+	    			</div>
+				
+				</div>
+		
+			</article>
+		
+		<article id="versions" class="tab-pane">Versions</article>
+	
+	</div>
+		
+</section>
+
+<!--#include virtual="presto-foot.html" -->
